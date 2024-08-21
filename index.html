@@ -19,9 +19,31 @@
 </head>
 
 <body>
-
-<script src="https://cdn.botpress.cloud/webchat/v2.1/inject.js"></script>
-<script src="https://mediafiles.botpress.cloud/c9a9f633-a401-4481-9440-705b2d45e729/webchat/v2.1/config.js"></script>
+<link rel="stylesheet" href="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/themes/df-messenger-default.css">
+<script src="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/df-messenger.js"></script>
+<df-messenger
+  project-id="technet-356313"
+  agent-id="98e58dba-779d-40ce-b897-567e87c26a7c"
+  language-code="en"
+  max-query-length="-1"
+  allow-feedback="all">
+  <df-messenger-chat-bubble
+   chat-title="OrianaBackup">
+  </df-messenger-chat-bubble>
+</df-messenger>
+<style>
+  df-messenger {
+    z-index: 999;
+    position: fixed;
+    --df-messenger-font-color: #000;
+    --df-messenger-font-family: Google Sans;
+    --df-messenger-chat-background: #f3f6fc;
+    --df-messenger-message-user-background: #d3e3fd;
+    --df-messenger-message-bot-background: #fff;
+    bottom: 16px;
+    right: 16px;
+  }
+</style>
   
 </body>
 
